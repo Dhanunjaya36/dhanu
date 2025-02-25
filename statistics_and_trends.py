@@ -60,7 +60,7 @@ def plot_statistical_plot(df, col):
 def statistical_analysis(df, col: str):
     """Compute mean, standard deviation, skewness, and excess kurtosis."""
     data = df[col].dropna()
-    mean = data.mean()
+    mean =  df["CO2 Emissions(g/km)"].mean()
     stddev = data.std()
     skew_val = ss.skew(data)
     excess_kurtosis = ss.kurtosis(data)
