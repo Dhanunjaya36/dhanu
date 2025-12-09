@@ -1,23 +1,45 @@
-# K-Means Clustering Tutorial: Optimizing the Choice of 'k'
+# Optimizing k-means Clustering: A Tutorial on Selecting k
 
-## Overview
-This repository contains a machine learning tutorial created for the Machine Learning and Neural Networks Individual Assignment. The focus of this project is **K-Means Clustering**, specifically addressing the challenge of selecting the optimal number of clusters ($k$).
+**Author:** Dhanunjaya Rao Thandra  
+**Course:** Machine Learning and Neural Networks  
+**University of Hertfordshire**
 
-## Contents
-* **`kmeans_tutorial.pdf`**: The written tutorial explaining the theory behind the Elbow Method and Silhouette Analysis.
-* **`kmeans_code.ipynb`**: A Jupyter Notebook containing the full Python implementation, data generation, and accessible visualizations.
-* **`requirements.txt`**: A list of Python dependencies required to run the code.
+## 📌 Overview
+This repository contains a comprehensive tutorial on k-means clustering, specifically focusing on the critical challenge of determining the optimal number of clusters (*k*). Unlike basic tutorials that only cover the Elbow Method, this project implements and compares three distinct validation techniques to ensure robust model selection.
 
-## Key Techniques Covered
-1.  **Data Generation**: Creating synthetic blobs using `sklearn.datasets`.
-2.  **The Elbow Method**: Visualizing Inertia to find the inflection point.
-3.  **Silhouette Analysis**: Validating cluster consistency mathematically.
-4.  **Accessibility**: Using colorblind-friendly palettes (Viridis) for all plots.
+## 🚀 Key Features
+* **Synthetic Data Generation:** Uses `make_blobs` to create a ground-truth dataset for precise validation.
+* **Triple Validation Strategy:**
+    1.  **Elbow Method:** Analyzing inertia variance.
+    2.  **Silhouette Analysis:** Quantifying cluster cohesion and separation.
+    3.  **Gap Statistic:** A statistical approach comparing data against a random reference distribution.
+* **Accessibility First:** All visualizations utilize the **Viridis** color palette and **dual-encoding** (color + shape markers) to ensure readability for colorblind users and grayscale printing.
+* **Ethical Framework:** Includes a discussion on bias in clustering and "digital redlining."
 
-## How to Run
-1.  Clone this repository.
-2.  Install dependencies: `pip install -r requirements.txt`
-3.  Open the Jupyter Notebook: `jupyter notebook kmeans_code.ipynb`
+## 📂 Repository Structure
+* `KMeans_Tutorial_Notebook.ipynb`: The interactive Python notebook containing all code, visualizations, and analysis.
+* `Tutorial_KMeans_Optimization.pdf`: The final formatted tutorial report.
+* `requirements.txt`: List of Python dependencies required to run the notebook.
+* `figures/`: Generated plots used in the report.
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 🛠️ Installation & Usage
+To run the notebook locally:
+
+1.  **Clone this repository:**
+    ```bash
+    git clone [https://github.com/Dhanunjaya36/dhanu/edit/main/README.md]
+    ```
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **Launch Jupyter Notebook:**
+    ```bash
+    jupyter notebook KMeans_Tutorial_Notebook.ipynb
+    ```
+
+## 📊 Results Summary
+The analysis confirms that **k=4** is the optimal number of clusters for the generated dataset, with all three methods (Elbow, Silhouette, and Gap Statistic) reaching a consensus.
+
+## ⚖️ License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
